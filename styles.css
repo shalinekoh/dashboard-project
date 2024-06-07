@@ -1,3 +1,24 @@
-p {
-    color: red;
+.sidebar {
+    display: grid;
+}
+
+.sidebar-item {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 15px;
+}
+
+#main-logo {
+    margin-bottom: 1.5rem;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#community {
+    margin-bottom: 2.5rem;
+}
+
+.sidebar-item > svg {
+    align-self: center;
+    justify-self: center;
 }
