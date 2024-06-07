@@ -22,3 +22,51 @@
     align-self: center;
     justify-self: center;
 }
+
+.header {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    gap: 2rem;
+}
+
+.header .top {
+    display: grid;
+    /* grid-template-columns: 30px 500px 30px 30px 100px; */
+    grid-template-columns: 6fr 30px 30px 130px;
+    gap: 15px;
+}
+
+.top > svg,
+.top > img {
+    align-self: center;
+}
+
+.top .search-bar {
+    display: grid;
+    grid-template-columns: 30px 9fr;
+}
+.search-bar > input {
+    width: 70%;
+    align-self: center;
+}
+.search-bar svg {
+    align-self: center;
+}
+
+.top p {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 60px 6fr 1fr 1fr 1fr;
+    gap: 15px;
+    align-content: center;
+}
+.bottom img{
+    align-self: center;
+}
+.bottom p {
+    font-size: larger;
+}
