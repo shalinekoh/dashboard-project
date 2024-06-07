@@ -98,3 +98,29 @@
     justify-self: end;
     gap: 10px;
 }
+
+/* ANNOUNCEMENT */
+
+.card  > #title {
+    font-weight: bold;
+}
+
+.announcement .card{
+    border-bottom: 1px lightgray solid;
+    margin: 0 20px;
+}
+
+.trending {
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+}
+
+.person {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+}
+
+.person > img {
+    align-self: center;
+    justify-self: center;
+}
