@@ -4,18 +4,21 @@ body{
     width: 100vw;
     padding: 0;
     margin: 0;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 150px 1fr;
 }
 
-.container {
-    height: 100%;
+/* .container {
+    height: 10%;
     width: 100%;
     display: grid;
     /* grid-template-columns: 15% 60% 25%;
     grid-template-rows: 20% 40% 40%; */
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 20% 80%;
+    /* grid-template-columns: 250px 1fr;
+    grid-template-rows: 150px 1fr; */
     /* gap: 15px; */
-}
+/* }  */
 
 /* SIDEBAR */
 .sidebar {
@@ -117,33 +120,39 @@ body{
 }
 
 /* PROJECTS CONTENT */
-
+.main-content{
+    background-color: rgb(228, 225, 225);;
+}
+.main-content h2 {
+    padding: 15px;
+}
 .projects {
     grid-column: 1;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px;
-    background-color: rgb(228, 225, 225);
+    /* background-color: rgb(228, 225, 225); */
     padding: 30px 15px;
 }
-.projects h2 {
-    display: grid;
-    grid-column: 1 / -1;
-    margin: 0;
+
+.card .top{
+    grid-column: 1;
 }
-.card h3 {
-    margin: 0;
-}
-.card p{
-    margin: 0;
+.card .top > p{
+    margin-top: 15px;
+    color: rgb(99, 96, 96);
+    font-weight: lighter;
+    font-size: medium;
 }
 .projects .card {
-    padding: 10px;
+    padding: 20px;
     display: grid;
+    grid-template-rows: 1fr 24px;
     border-radius: 10px;
     background-color: white;
     border-left: rgb(255, 217, 0) 10px solid;
     box-sizing: border-box;
+    /* height: fit-content; */
 }
 
 .card .icon {
@@ -157,18 +166,27 @@ body{
 
 .card  > #title {
     font-weight: bold;
+    color: black;
 }
-
-.announcement .card{
+.announcement-content{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.announcement .card {
     border-bottom: 1px lightgray solid;
     margin: 0 20px;
+    /* padding: 15px; */
 }
 
 .trending {
     display:grid;
     align-self: end;
 }
-
+.trending .content {
+    background-color: white;
+    border-radius: 10px;
+}
 .person {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -194,6 +212,8 @@ h3 {
     grid-column:2;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    background-color: rgb(228, 225, 225);
+    padding: 30px 15px;
 }
 
 .main-content {
@@ -201,5 +221,4 @@ h3 {
     grid-column: 2;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 15px;
 }
