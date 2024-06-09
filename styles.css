@@ -14,7 +14,7 @@ body{
     grid-template-rows: 20% 40% 40%; */
     grid-template-columns: 20% 80%;
     grid-template-rows: 20% 80%;
-    gap: 15px;
+    /* gap: 15px; */
 }
 
 /* SIDEBAR */
@@ -53,7 +53,9 @@ body{
     grid-column: 2 / -1;
     display: grid;
     grid-template-rows: 1fr 2fr;
-    gap: 1rem;
+    /* gap: 15px; */
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+    padding: 15px 15px 0 15px;
 }
 
 .header .top {
@@ -74,9 +76,23 @@ body{
 }
 .search-bar > input {
     width: 70%;
+    height: 24px;
     align-self: center;
+    background-color: rgb(228, 225, 225);
+    border: none;
+    border-radius: 15px;
 }
 .search-bar svg {
+    align-self: center;
+}
+.header .bottom > button{
+    background-color:cornflowerblue;
+    border-radius: 10px;
+    border: none;
+    height: fit-content;
+    padding: 10px 30px;
+    color: white;
+    font-weight: bold;
     align-self: center;
 }
 
